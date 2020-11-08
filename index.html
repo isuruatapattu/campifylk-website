@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Campify | Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cover">
+        <div class="cover_image">
+          <img src="/sources/images/Cover_mini.png" alt="Cover" />
+        </div>
+        <div class="cover_logo">
+          <img src="/sources/images/campify_word.png" alt="Campify" />
+        </div>
+      </div>
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper">
+            <div class="nav-link-wrapper-home">
+              <a href="index.html">Home</a>
+            </div>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="buy.html">Buy</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="rent.html">Rent</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="guide.html">Guide</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="stories.html">Stories</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="about.html">About Us</a>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="brand">
+            <div class="head_company">GearifyLK</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-limg-background"
+              style="background-image: url(sources/images/sample/1.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper"></div>
+              <div class="subtitle">
+                Sample Image 01 We are Camping Equipment's Renting Service in
+                Sri Lanka.We do rent Camping Tents, Hiking Backpacks, Camping
+                Hammocks many more Outdoor Gears
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-limg-background"
+              style="background-image: url(sources/images/sample/2.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="sources/images/Logo1.png" />
+              </div>
+              <div class="subtitle">
+                Sample Image 02 We are Camping Equipment's Renting Service in
+                Sri Lanka.We do rent Camping Tents, Hiking Backpacks, Camping
+                Hammocks many more Outdoor Gears
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-limg-background"
+              style="background-image: url(sources/images/sample/3.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper"></div>
+              <div class="subtitle">
+                Sample Image 03 We are Camping Equipment's Renting Service in
+                Sri Lanka.We do rent Camping Tents, Hiking Backpacks, Camping
+                Hammocks many more Outdoor Gears
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-limg-background"
+              style="background-image: url(sources/images/sample/4.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper"></div>
+              <div class="subtitle">
+                Sample Image 04 We are Camping Equipment's Renting Service in
+                Sri Lanka.We do rent Camping Tents, Hiking Backpacks, Camping
+                Hammocks many more Outdoor Gears
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-limg-background"
+              style="background-image: url(sources/images/sample/5.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper"></div>
+              <div class="subtitle">
+                Sample Image 05 We are Camping Equipment's Renting Service in
+                Sri Lanka.We do rent Camping Tents, Hiking Backpacks, Camping
+                Hammocks many more Outdoor Gears
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-limg-background"
+              style="background-image: url(sources/images/sample/6.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper"></div>
+              <div class="subtitle">
+                Sample Image 06 We are Camping Equipment's Renting Service in
+                Sri Lanka.We do rent Camping Tents, Hiking Backpacks, Camping
+                Hammocks many more Outdoor Gears
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-wrapper">
+        <div class="footer-left">
+          <div class="copyright">
+            <div class="copyright-campify">
+              <img src="/sources/images/campify_word_cr.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="social-logos">
+            <div class="fb-logo">
+              <a href="https://www.facebook.com" target="_blank"
+                ><img src="/sources/images/social_logos/fb.png"
+              /></a>
+            </div>
+            <div class="insta-logo">
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="/sources/images/social_logos/insta.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+    portfolioItems.forEach((portfolioItem) => {
+      portfolioItem.addEventListener("mouseover", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.add("img-darken");
+      });
+      portfolioItem.addEventListener("mouseout", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.remove("img-darken");
+      });
+    });
+  </script>
+</html>

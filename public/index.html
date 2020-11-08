@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./animate.min.css" />
+
+    <link rel="stylesheet" href="./styles_form.css" />
+    <title>Campify | Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand"><span>Campify</span> Query Form</h1>
+      <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+          <h3>CampifyLK</h3>
+          <ul>
+            <li>
+              <i class="fa fa-map-marker"></i>&nbsp &nbsp Kurunegala, Sri Lanka
+            </li>
+            <li><i class="fa fa-phone"></i>&nbsp &nbsp +94 77 913 2148</li>
+            <li><i class="fa fa-envelope"></i>&nbsp campifylk@gmail.com</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Email Us</h3>
+          <div class="alert">Request Submitted</div>
+          <form id="contactform">
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" id="name" required />
+            </p>
+            <p>
+              <label>Location</label>
+              <input type="text" name="location" id="location" />
+            </p>
+            <p>
+              <label>Email Address</label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p>
+              <label>Mobile No.</label>
+              <input type="text" name="phone" id="phone" required />
+            </p>
+
+            <p class="full">
+              <label>Required Items</label>
+              <textarea
+                name="reqitems"
+                rows="7"
+                id="reqitems"
+                required
+              ></textarea>
+            </p>
+
+            <p class="full">
+              <label>Message</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+            <p class="full" id="ff">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script src="./script_form.js"></script>
+  </body>
+</html>
